@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario - Programação Web | 3SemADS - Fatec</title>
+
+   
 </head>
 <body>
+    <form action="" method="post">
+        <label for="nome"><strong>Nome Completo</strong></label><br>
+        <input type="text" name="nome" required>
+        <br><br>
+
+        <label for="email"><strong>E-mail</strong></label><br>
+        <input type="email" name="email" required>
+        <br><br>
+
+        <label for="telefone"><strong>Telefone</strong></label><br>
+        <input type="text" name="telefone" required>
+        <br><br>
+
+        <label for="data_nascimento"><strong>Data de Nascimento</strong></label><br>
+        <input type="date" name="data_nascimento" required>
+        <br><br>
+
+        <label for="genero"><strong>Gênero</strong></label><br>
+        <input type="radio" name="genero" value="Masculino">Masculino
+        <br>
+        <input type="radio" name="genero" value="Feminino">Feminino
+        <br>
+        <input type="radio" checked name="genero" value="outro" >Outro
+ 
+        <br><br>
+
+        <label for="mensagem"><strong>Mensagem</strong></label><br>
+        <input type="textarea" maxlength="200" name="mensagem" required>
+        <br><br>
+
+        <label for="tipo_inscricao"><strong>Tipo de Inscrição</strong></label><br>
+        <select name="tipo_inscricao" required>
+            <option value="0" disabled selected>Selecione</option>
+            <option value="Palestrante">Palestrante</option>
+            <option value="Participante">Participante</option>
+            <option value="Voluntário">Voluntário</option>
+            <option value="Outro">Outro</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Registrar">
+        <!-- <input type="button" id="reset" value="Limpar"> -->
+
+        <p>
+            Já possui uma conta? <a href="login.html">Entrar</a>
+        </p>
+
+    </form>
     
 </body>
+
+<!-- <script src="js/limparform.js"></script> -->
 </html>
